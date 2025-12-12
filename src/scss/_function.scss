@@ -1,0 +1,17 @@
+@use "./variables" as v;
+
+@function color($value) {
+  @return map-get(v.$colors, $value);
+}
+
+@function fw($value) {
+  @return map-get(v.$fw, $value);
+}
+
+@function fs($value) {
+  @return map-get(v.$fs, $value);
+}
+
+@function fs-category($value) {
+  @return map-get(v.$fs-category, $value);
+}
