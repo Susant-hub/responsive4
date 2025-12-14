@@ -12,7 +12,7 @@
     />
   </head>
   <body>
-    <header>
+    <header class="grid-column-layout">
       <div class="nav-wrapper">
         <img src="./src/assets/images/logo-dark.svg" alt="logo" />
 
@@ -29,125 +29,153 @@
       </div>
     </header>
 
-    <main>
-      <section class="hero-section">
-        <div class="hero-text">
-          <h1>Next generation digital banking</h1>
-          <p>
-            Take your financial life online. Your Easybank account will be a
-            one-stop-shop for spending, saving, budgeting, investing, and much
-            more.
-          </p>
-          <button class="primary-btn">Request Invite</button>
-        </div>
-
-        <div class="hero-img">
-          <img src="./src/assets/images/bg-intro-desktop.svg" alt="mockups" />
-        </div>
-      </section>
-
-      <section class="features-section">
-        <div class="why">
-          <h2>Why choose Digitalbank?</h2>
-          <p>
-            We leverage Open Banking to turn your bank account into your
-            financial hub. Control your finances like never before.
-          </p>
-        </div>
-        <div class="features">
-          <div class="feature-card">
-            <img src="./src/assets/images/icon-budgeting.svg" alt="budgeting" />
-            <h3>Simple Budgeting</h3>
+    <main class="grid-column-layout">
+      <section class="hero-section section">
+        <div class="hero-container | content-right-bleed even-columns">
+          <div class="hero-text flow-content-sm">
+            <h1>Next generation digital banking</h1>
             <p>
-              See exactly where your money goes each month. Receive
-              notifications when you’re close to hitting your limits.
+              Take your financial life online. Your Digitalbank account will be
+              a one-stop-shop for spending, saving, budgeting, investing, and
+              much more.
             </p>
+            <button class="primary-btn">Request Invite</button>
           </div>
-          <div class="feature-card">
-            <img
-              src="./src/assets/images/icon-onboarding.svg"
-              alt="onboarding"
-            />
-            <h3>Fast Onboarding</h3>
-            <p>
-              We don’t do branches. Open your account in minutes online and
-              start taking control of your finances right away.
-            </p>
-          </div>
-          <div class="feature-card">
-            <img src="./src/assets/images/icon-api.svg" alt="api" />
-            <h3>Open API</h3>
-            <p>
-              Manage your savings, investments, pension, and much more from one
-              account. Tracking your money has never been easier.
-            </p>
+
+          <div class="hero-img">
+            <img src="./src/assets/images/bg-intro-desktop.svg" alt="mockups" />
           </div>
         </div>
       </section>
 
-      <section class="articles-section">
-        <h2>Latest Articles</h2>
-        <div class="articles">
-          <div class="article-card">
-            <img src="./src/assets/images/image-currency.jpg" alt="currency" />
-            <div class="article-text">
-              <h3>By Claire Robinson</h3>
-              <h4>Receive money in any currency with no fees</h4>
+      <section class="features-section section">
+        <div class="features-container | content-centered">
+          <div class="why | flow-content-md">
+            <h2>Why choose Digitalbank?</h2>
+            <p>
+              We leverage Open Banking to turn your bank account into your
+              financial hub. Control your finances like never before.
+            </p>
+          </div>
+          <div class="features | even-columns">
+            <div class="feature-card | flow-content-sm">
+              <img
+                src="./src/assets/images/icon-online.svg"
+                alt="image-onboarding"
+              />
+              <h3>Online Banking</h3>
               <p>
-                The world is getting smaller and we’re becoming more mobile. So
-                why should you be forced to only receive money in a single ...
+                Our modern web and mobile applications allow you to keep track
+                of your finances wherever you are in the world.
+              </p>
+            </div>
+            <div class="feature-card | flow-content-sm">
+              <img
+                src="./src/assets/images/icon-budgeting.svg"
+                alt="budgeting"
+              />
+              <h3>Simple Budgeting</h3>
+              <p>
+                See exactly where your money goes each month. Receive
+                notifications when you’re close to hitting your limits.
+              </p>
+            </div>
+            <div class="feature-card | flow-content-sm">
+              <img
+                src="./src/assets/images/icon-onboarding.svg"
+                alt="onboarding"
+              />
+              <h3>Fast Onboarding</h3>
+              <p>
+                We don’t do branches. Open your account in minutes online and
+                start taking control of your finances right away.
+              </p>
+            </div>
+            <div class="feature-card | flow-content-sm">
+              <img src="./src/assets/images/icon-api.svg" alt="api" />
+              <h3>Open API</h3>
+              <p>
+                Manage your savings, investments, pension, and much more from
+                one account. Tracking your money has never been easier.
               </p>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="article-card">
-            <img
-              src="./src/assets/images/image-restaurant.jpg"
-              alt="image-restaurant"
-            />
-            <div class="article text">
-              <h3>By Wilson Hutton</h3>
-              <h4>Treat yourself without worrying about money</h4>
-              <p>
-                Our simple budgeting feature allows you to separate out your
-                spending and set realistic limits each month. That means you ...
-              </p>
+      <section class="articles-section section">
+        <div class="articles-container | content-centered">
+          <h2>Latest Articles</h2>
+          <div class="articles | even-columns">
+            <div class="article-card">
+              <img
+                src="./src/assets/images/image-currency.jpg"
+                alt="currency"
+              />
+              <div class="article-text">
+                <h3>By Claire Robinson</h3>
+                <h4>Receive money in any currency with no fees</h4>
+                <p>
+                  The world is getting smaller and we’re becoming more mobile.
+                  So why should you be forced to only receive money in a single
+                  ...
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div class="article-card">
-            <img src="./src/assets/images/image-plane.jpg" alt="image-plane" />
-            <div class="article-text">
-              <h3>By Wilson Hutton</h3>
-              <h4>Take your Easybank card wherever you go</h4>
-              <p>
-                We want you to enjoy your travels. This is why we don’t charge
-                any fees on purchases while you’re abroad. We’ll even show you
-                ...
-              </p>
+            <div class="article-card">
+              <img
+                src="./src/assets/images/image-restaurant.jpg"
+                alt="image-restaurant"
+              />
+              <div class="article text">
+                <h3>By Wilson Hutton</h3>
+                <h4>Treat yourself without worrying about money</h4>
+                <p>
+                  Our simple budgeting feature allows you to separate out your
+                  spending and set realistic limits each month. That means you
+                  ...
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div class="article-card">
-            <img
-              src="./src/assets/images/image-confetti.jpg"
-              alt="image-confetti"
-            />
-            <div class="article-text">
-              <h3>By Claire Robinson</h3>
-              <h4>Our invite-only Beta accounts are now live!</h4>
-              <p>
-                After a lot of hard work by the whole team, we’re excited to
-                launch our closed beta. It’s easy to request an invite through
-                the site ...
-              </p>
+            <div class="article-card">
+              <img
+                src="./src/assets/images/image-plane.jpg"
+                alt="image-plane"
+              />
+              <div class="article-text">
+                <h3>By Wilson Hutton</h3>
+                <h4>Take your Easybank card wherever you go</h4>
+                <p>
+                  We want you to enjoy your travels. This is why we don’t charge
+                  any fees on purchases while you’re abroad. We’ll even show you
+                  ...
+                </p>
+              </div>
+            </div>
+
+            <div class="article-card">
+              <img
+                src="./src/assets/images/image-confetti.jpg"
+                alt="image-confetti"
+              />
+              <div class="article-text">
+                <h3>By Claire Robinson</h3>
+                <h4>Our invite-only Beta accounts are now live!</h4>
+                <p>
+                  After a lot of hard work by the whole team, we’re excited to
+                  launch our closed beta. It’s easy to request an invite through
+                  the site ...
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer>
+    <footer class="grid-column-layout">
       <div class="footer-wrapper">
         <div class="logos">
           <img src="./src/assets/images/logo-light.svg" alt="logo" />

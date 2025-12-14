@@ -31,7 +31,7 @@ $fs-category: (
   body: map-get($fs, 300),
   nav: map-get($fs, 100),
   heading-sm: map-get($fs, 400),
-  heading-md: map-get($fs, 500),
+  heading-md: map-get($fs, 700),
   heading-xl: clamp(2rem, 4vw, map-get($fs, 900)),
 );
 
