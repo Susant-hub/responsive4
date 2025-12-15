@@ -13,11 +13,24 @@
   </head>
   <body>
     <header class="grid-column-layout">
-      <div class="nav-wrapper">
+      <div class="nav-wrapper | content-centered">
         <img src="./src/assets/images/logo-dark.svg" alt="logo" />
 
+        <button class="mobile-menu">
+          <img
+            class="hamburger-icon"
+            src="./src/assets/images/icon-hamburger.svg"
+            alt="hamburger-icon"
+          />
+          <img
+            class="close-icon"
+            src="./src/assets/images/icon-close.svg"
+            alt="close-icon"
+          />
+        </button>
+
         <nav class="primary-navigation">
-          <ul [role="list" ] class="nav-list">
+          <ul role="list" class="nav-list">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
@@ -25,14 +38,14 @@
             <li><a href="#">Career</a></li>
           </ul>
         </nav>
-        <button class="primary-btn">Request Invite</button>
+        <button id="nav-btn" class="primary-btn">Request Invite</button>
       </div>
     </header>
 
     <main class="grid-column-layout">
       <section class="hero-section section">
-        <div class="hero-container | content-right-bleed even-columns">
-          <div class="hero-text flow-content-sm">
+        <div class="hero-container | even-columns">
+          <div class="hero-text flow-content-md">
             <h1>Next generation digital banking</h1>
             <p>
               Take your financial life online. Your Digitalbank account will be
@@ -58,7 +71,7 @@
             </p>
           </div>
           <div class="features | even-columns">
-            <div class="feature-card | flow-content-sm">
+            <div class="feature-card | flow-content-md">
               <img
                 src="./src/assets/images/icon-online.svg"
                 alt="image-onboarding"
@@ -69,7 +82,7 @@
                 of your finances wherever you are in the world.
               </p>
             </div>
-            <div class="feature-card | flow-content-sm">
+            <div class="feature-card | flow-content-md">
               <img
                 src="./src/assets/images/icon-budgeting.svg"
                 alt="budgeting"
@@ -80,7 +93,7 @@
                 notifications when you’re close to hitting your limits.
               </p>
             </div>
-            <div class="feature-card | flow-content-sm">
+            <div class="feature-card | flow-content-md">
               <img
                 src="./src/assets/images/icon-onboarding.svg"
                 alt="onboarding"
@@ -91,7 +104,7 @@
                 start taking control of your finances right away.
               </p>
             </div>
-            <div class="feature-card | flow-content-sm">
+            <div class="feature-card | flow-content-md">
               <img src="./src/assets/images/icon-api.svg" alt="api" />
               <h3>Open API</h3>
               <p>
@@ -104,7 +117,7 @@
       </section>
 
       <section class="articles-section section">
-        <div class="articles-container | content-centered">
+        <div class="articles-container | content-centered flow-content-lg">
           <h2>Latest Articles</h2>
           <div class="articles | even-columns">
             <div class="article-card">
@@ -112,7 +125,7 @@
                 src="./src/assets/images/image-currency.jpg"
                 alt="currency"
               />
-              <div class="article-text">
+              <div class="article-text | flow-content-sm">
                 <h3>By Claire Robinson</h3>
                 <h4>Receive money in any currency with no fees</h4>
                 <p>
@@ -128,7 +141,7 @@
                 src="./src/assets/images/image-restaurant.jpg"
                 alt="image-restaurant"
               />
-              <div class="article text">
+              <div class="article-text | flow-content-sm">
                 <h3>By Wilson Hutton</h3>
                 <h4>Treat yourself without worrying about money</h4>
                 <p>
@@ -144,7 +157,7 @@
                 src="./src/assets/images/image-plane.jpg"
                 alt="image-plane"
               />
-              <div class="article-text">
+              <div class="article-text | flow-content-sm">
                 <h3>By Wilson Hutton</h3>
                 <h4>Take your Easybank card wherever you go</h4>
                 <p>
@@ -160,7 +173,7 @@
                 src="./src/assets/images/image-confetti.jpg"
                 alt="image-confetti"
               />
-              <div class="article-text">
+              <div class="article-text | flow-content-sm">
                 <h3>By Claire Robinson</h3>
                 <h4>Our invite-only Beta accounts are now live!</h4>
                 <p>
@@ -176,9 +189,13 @@
     </main>
 
     <footer class="grid-column-layout">
-      <div class="footer-wrapper">
+      <div class="footer-wrapper | content-centered even-columns">
         <div class="logos">
-          <img src="./src/assets/images/logo-light.svg" alt="logo" />
+          <img
+            class="logo"
+            src="./src/assets/images/logo-light.svg"
+            alt="logo"
+          />
           <ul class="social-icons" role="list">
             <li>
               <a href="#"
@@ -235,6 +252,7 @@
         </div>
       </div>
     </footer>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
