@@ -52,12 +52,20 @@ body {
 }
 
 // ----Navbar----
+header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  background-color: color(neutral-0);
+  z-index: 1000;
+}
+
 .nav-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.75rem 0;
 }
+
 .nav-list {
   display: grid;
   grid-auto-flow: column;
@@ -177,39 +185,91 @@ body {
 // ----Hero----
 .hero-section {
   background-color: color(neutral-50);
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-container {
-  grid-column: content-start/ full-end;
+  grid-column: content-start / full-end;
   align-items: center;
+  position: relative;
 
   @media (width < 50em) {
-    grid-column: content;
+    grid-column: full;
   }
 }
-// .hero-img {
-//   position: relative;
-//   height: 100%;
-//   min-height: 700px;
-//   overflow: visible;
-// }
-// .hero-img::after {
-//   content: "";
-//   position: absolute;
-//   top: 0px;
-//   right: -100px;
-//   width: 100%;
-//   height: 100%;
-//   background-image: url(../assets/images/image-mockups.png);
-//   background-repeat: no-repeat;
-//   aspect-ratio: 2/1;
-//   background-size: contain;
-//   z-index: 100;
-// }
+
+.hero-img {
+  position: relative;
+  min-height: 42rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  @media (width < 50em) {
+    min-height: auto;
+    justify-content: center;
+    padding-top: 3rem;
+  }
+}
+
+.hero-bg-wrap {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hero-bg {
+  position: absolute;
+  top: -30%;
+  right: -50%;
+  width: 65rem;
+  max-width: none;
+
+  @media (width < 50em) {
+    content: url("../assets/images/bg-intro-mobile.svg");
+    top: -15%;
+    right: 50%;
+    transform: translateX(50%);
+    width: 120%;
+  }
+}
+
+.hero-mockups {
+  position: absolute;
+  right: -8%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42rem;
+  max-width: none;
+  z-index: 1;
+
+  @media (width < 75em) {
+    width: 34rem;
+    right: -4%;
+  }
+  @media (width < 62.5em) {
+    width: 30rem;
+  }
+
+  @media (width < 59.375em) {
+    width: 25rem;
+  }
+
+  @media (width < 50em) {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    width: 100%;
+    max-width: 26rem;
+    margin-inline: auto;
+  }
+}
 
 .hero-text {
   padding-block: $space-600;
-
   h1 {
     font-size: fs-category(heading-xl);
     max-width: 15ch;
@@ -221,10 +281,14 @@ body {
     font-size: fs(300);
     color: color(neutral-600);
     max-width: 41ch;
-  }
 
+    @media (width < 75em) {
+      font-size: fs(200);
+    }
+  }
   @media (width < 50em) {
     order: 1;
+    padding: $space-500 $space-400;
     text-align: center;
     line-height: 1.2;
 
@@ -355,6 +419,7 @@ body {
   h3 {
     color: color(neutral-600);
     font-weight: fw(medium);
+    font-size: fs(100);
   }
   h4 {
     color: color(primary-950);
