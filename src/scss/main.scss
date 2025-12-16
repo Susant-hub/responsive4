@@ -147,7 +147,7 @@ header {
     position: fixed;
     inset: 4rem $space-500 auto $space-500;
     background-color: color(neutral-0);
-    border-radius: $space-200;
+    border-radius: 0.25rem;
     padding-block: $space-300;
     z-index: 1000;
   }
