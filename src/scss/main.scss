@@ -186,7 +186,7 @@ header {
 .hero-section {
   background-color: color(neutral-50);
   position: relative;
-  overflow: hidden;
+  overflow-x: clip;
 }
 
 .hero-container {
